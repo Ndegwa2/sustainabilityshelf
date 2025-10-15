@@ -1,0 +1,252 @@
+.product-detail {
+  padding: 40px 0;
+  min-height: calc(100vh - 80px);
+}
+
+.product-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.product-header .brand {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.product-header .category-tag {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.product-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.product-info {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.sustainability-score {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.sustainability-score .score-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  margin: 0 auto 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sustainability-score .score-number {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.sustainability-score .score-max {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.sustainability-score h3 {
+  color: #2c3e50;
+  margin: 0;
+}
+
+.product-description {
+  margin-bottom: 30px;
+}
+
+.product-description h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.product-description p {
+  line-height: 1.6;
+  color: #555;
+}
+
+.product-actions {
+  text-align: center;
+}
+
+.reviews-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+.review-form {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.review-form h4 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.review-form .form-group {
+  margin-bottom: 20px;
+}
+
+.review-form .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+.review-form .form-group select,
+.review-form .form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.review-form .form-group select:focus,
+.review-form .form-group textarea:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.review-form .form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.reviews-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.review-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 4px solid #4CAF50;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rating {
+  color: #ffc107;
+  font-size: 1.2rem;
+}
+
+.review-date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.review-comment {
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .product-detail {
+    padding: 30px 0;
+  }
+  
+  .product-header h1 {
+    font-size: 2rem;
+  }
+  
+  .product-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .product-info,
+  .reviews-section {
+    padding: 25px;
+  }
+  
+  .sustainability-score .score-circle {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .sustainability-score .score-number {
+    font-size: 1.5rem;
+  }
+  
+  .review-form {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-header {
+    padding: 20px;
+  }
+  
+  .product-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .product-info,
+  .reviews-section {
+    padding: 20px;
+  }
+  
+  .review-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}

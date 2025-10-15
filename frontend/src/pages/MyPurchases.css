@@ -1,0 +1,215 @@
+.my-purchases {
+  padding: 40px 0;
+  min-height: calc(100vh - 80px);
+}
+
+.my-purchases h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.sustainability-summary {
+  margin-bottom: 40px;
+}
+
+.summary-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f0f0f0;
+}
+
+.summary-card h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+.impact-stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
+}
+
+.stat {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.stat .score-badge {
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.purchases-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.purchase-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.purchase-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.purchase-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+.purchase-info .brand {
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.purchase-info .category-tag {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.purchase-date {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.purchase-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.purchase-actions .score-badge {
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.no-purchases {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.no-purchases p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.no-purchases p:last-child {
+  margin-bottom: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .my-purchases {
+    padding: 30px 0;
+  }
+  
+  .my-purchases h1 {
+    font-size: 2rem;
+  }
+  
+  .summary-card {
+    padding: 25px;
+  }
+  
+  .impact-stats {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .purchase-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .purchase-actions {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-purchases h1 {
+    font-size: 1.8rem;
+  }
+  
+  .summary-card {
+    padding: 20px;
+  }
+  
+  .purchase-card {
+    padding: 15px;
+  }
+  
+  .purchase-info h3 {
+    font-size: 1.2rem;
+  }
+  
+  .purchase-actions {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .purchase-actions .btn {
+    width: 100%;
+  }
+}
