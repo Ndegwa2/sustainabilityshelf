@@ -25,11 +25,14 @@ function Login() {
     setError('');
 
     try {
+      console.log('Sending login request with data:', formData);
       const response = await axios.post('/api/users/login', formData);
+      console.log('Login response:', response);
       // Store user data in localStorage (in a real app, use proper auth management)
       localStorage.setItem('user', JSON.stringify(response.data));
       navigate('/');
     } catch (err) {
+      console.error('Login error:', err);
       setError(err.response?.data?.error || 'Login failed');
     } finally {
       setLoading(false);
